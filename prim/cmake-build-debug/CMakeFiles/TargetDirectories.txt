@@ -1,0 +1,3 @@
+C:/Users/ikkeg/Documentos/gits/Graph-teory/prim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ikkeg/Documentos/gits/Graph-teory/prim/cmake-build-debug/CMakeFiles/prim.dir
+C:/Users/ikkeg/Documentos/gits/Graph-teory/prim/cmake-build-debug/CMakeFiles/edit_cache.dir
