@@ -6,11 +6,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//melhor colocar em um arquivo separado
 void insert_edges(HEAP *heap, Graph *graph) {
     for(lli i = 0; i < graph->vertex_quantity; i++) {
         Adjacency_list *actual = graph->adjacency_list[i];
         while (actual != NULL) {
             enqueue(heap, actual->weight, actual);
+
+            actual = actual->next;
         }
 
     }
