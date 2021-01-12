@@ -102,21 +102,66 @@ CMakeFiles/prim.dir/graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/prim.dir/graph.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\graph.c -o CMakeFiles\prim.dir\graph.c.s
 
+CMakeFiles/prim.dir/prim.c.obj: CMakeFiles/prim.dir/flags.make
+CMakeFiles/prim.dir/prim.c.obj: ../prim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/prim.dir/prim.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\prim.dir\prim.c.obj   -c C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\prim.c
+
+CMakeFiles/prim.dir/prim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/prim.dir/prim.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\prim.c > CMakeFiles\prim.dir\prim.c.i
+
+CMakeFiles/prim.dir/prim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/prim.dir/prim.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\prim.c -o CMakeFiles\prim.dir\prim.c.s
+
+CMakeFiles/prim.dir/heap.c.obj: CMakeFiles/prim.dir/flags.make
+CMakeFiles/prim.dir/heap.c.obj: ../heap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/prim.dir/heap.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\prim.dir\heap.c.obj   -c C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\heap.c
+
+CMakeFiles/prim.dir/heap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/prim.dir/heap.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\heap.c > CMakeFiles\prim.dir\heap.c.i
+
+CMakeFiles/prim.dir/heap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/prim.dir/heap.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\heap.c -o CMakeFiles\prim.dir\heap.c.s
+
+CMakeFiles/prim.dir/input.c.obj: CMakeFiles/prim.dir/flags.make
+CMakeFiles/prim.dir/input.c.obj: ../input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/prim.dir/input.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\prim.dir\input.c.obj   -c C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\input.c
+
+CMakeFiles/prim.dir/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/prim.dir/input.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\input.c > CMakeFiles\prim.dir\input.c.i
+
+CMakeFiles/prim.dir/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/prim.dir/input.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\input.c -o CMakeFiles\prim.dir\input.c.s
+
 # Object files for target prim
 prim_OBJECTS = \
 "CMakeFiles/prim.dir/main.c.obj" \
-"CMakeFiles/prim.dir/graph.c.obj"
+"CMakeFiles/prim.dir/graph.c.obj" \
+"CMakeFiles/prim.dir/prim.c.obj" \
+"CMakeFiles/prim.dir/heap.c.obj" \
+"CMakeFiles/prim.dir/input.c.obj"
 
 # External object files for target prim
 prim_EXTERNAL_OBJECTS =
 
 prim.exe: CMakeFiles/prim.dir/main.c.obj
 prim.exe: CMakeFiles/prim.dir/graph.c.obj
+prim.exe: CMakeFiles/prim.dir/prim.c.obj
+prim.exe: CMakeFiles/prim.dir/heap.c.obj
+prim.exe: CMakeFiles/prim.dir/input.c.obj
 prim.exe: CMakeFiles/prim.dir/build.make
 prim.exe: CMakeFiles/prim.dir/linklibs.rsp
 prim.exe: CMakeFiles/prim.dir/objects1.rsp
 prim.exe: CMakeFiles/prim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable prim.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ikkeg\Documentos\gits\Graph-teory\prim\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable prim.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\prim.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
