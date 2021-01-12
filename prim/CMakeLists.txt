@@ -3,4 +3,4 @@ project(prim C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(prim main.c graph.h graph.c)
+add_executable(prim main.c graph.h graph.c prim.h prim.c heap.h heap.c input.c)
