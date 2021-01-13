@@ -20,7 +20,7 @@ void make_union(lli *father, lli *rank, lli x, lli y) {
     if (rank[x] >= rank[y]) {
         father[y] = x;
         if (rank[x] == rank[y]) {
-            rank[x] ++;
+            rank[x]++;
         }
     } else {
         father[x] = y;

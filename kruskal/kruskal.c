@@ -23,7 +23,7 @@ void kruskal_algorithm (Graph *graph) {
 
         if(find(father, actual_edge->origin) != find(father, actual_edge->item)) {
             tree = add_node(tree, actual_edge);
-            make_union(father, rank, actual_edge->origin, actual_edge->item);
+            make_union(father, rank, find(father, actual_edge->origin), find(father, actual_edge->item));
         }
     }
 
