@@ -2,8 +2,6 @@
 // Created by ikkeg on 12/01/2021.
 //
 #include "kruskal.h"
-#include "heap.h"
-#include "graph.h"
 #include "union-find.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -49,7 +47,3 @@ void heap_insert(HEAP *heap, Graph *graph) {
 
     }
 }
-
-//void kruskal_algorithm (Graph *graph, lli ) {
-//
-//}
