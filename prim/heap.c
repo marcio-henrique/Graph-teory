@@ -126,9 +126,9 @@ void bubble_up(HEAP *heap, int i) {
     }
 
     int parent_index = get_parent_index(i);
-    heap->vertex[parent_index]->index_heap = i;
-    heap->vertex[i]->index_heap = parent_index;
     if(heap->vertex[parent_index]->cost > heap->vertex[i]->cost) {
+        heap->vertex[parent_index]->index_heap = i;
+        heap->vertex[i]->index_heap = parent_index;
         swap_vertex((void *) &heap->vertex[parent_index], (void *) &heap->vertex[i]);
         bubble_up(heap, parent_index);
     }
