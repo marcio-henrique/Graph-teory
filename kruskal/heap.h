@@ -23,7 +23,7 @@ typedef struct _node {
 
 _node* _create_node(lli priority, void *data);
 
-HEAP *create_heap(lli size, void **data);
+HEAP *create_heap(lli size);
 
 int get_parent_index(int i);
 
