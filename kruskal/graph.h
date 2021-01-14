@@ -8,7 +8,6 @@
 typedef long long int lli;
 
 typedef struct Adjacency_list Adjacency_list;
-typedef struct Vertex Vertex;
 typedef struct Graph Graph;
 
 
@@ -26,8 +25,6 @@ struct Graph
     lli vertex_quantity;
     lli edge_quantity;
 };
-
-Vertex *create_vertex(lli index);
 
 Graph *create_graph(lli vertex_quantity);
 
