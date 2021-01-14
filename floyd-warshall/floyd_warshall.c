@@ -12,12 +12,6 @@ void floyd_warshall_algorithm (Graph *graph) {
 
     minimal_distancies = initialize_distancies(graph->adjacency_matrix, graph->vertex_quantity);
 
-//    for (lli i = 0; i < graph->vertex_quantity; i++) {
-//        for (lli j = 0; j < graph->vertex_quantity; j++) {
-//            minimal_distancies[i][j] = graph->adjacency_matrix[i][j];
-//        }
-//    }
-
     for (lli k = 0; k < graph->vertex_quantity; k++) {
         for (lli i = 0; i < graph->vertex_quantity; i++) {
             for (lli j = 0; j < graph->vertex_quantity; j++) {
