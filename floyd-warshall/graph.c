@@ -33,6 +33,7 @@ Graph *add_weighted_simple_edge (Graph *graph, lli vertex1, lli vertex2, lli wei
     graph->adjacency_matrix[vertex1][vertex2] = weight;
     graph->adjacency_matrix[vertex2][vertex1] = weight;
 
+    return graph;
 }
 
 Graph *add_one_directed_edge (Graph *graph, lli vertex1, lli vertex2, lli weight) {
