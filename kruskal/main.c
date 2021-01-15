@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "graph.h"
 #include "kruskal.h"
 
 Graph *get_graph();
 
 int main() {
-    Graph *g = get_graph()
+    Graph *g = get_graph();
 
     kruskal_algorithm(g);
 

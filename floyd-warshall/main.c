@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "graph.h"
 #include "floyd_warshall.h"
 
 Graph *get_graph();
 
 int main() {
-    Graph *g = get_graph();
+    Graph *graph = get_graph();
 
     floyd_warshall_algorithm(graph);
 

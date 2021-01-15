@@ -15,7 +15,7 @@ Graph *create_graph(lli vertex_quantity) {
 }
 
 Adjacency_list **create_adjacency_list(lli vertex_quantity) {
-    Adjacency_list **new_adjacency_list = (Adjacency_list **) malloc(vertex_quantity * sizeof (Vertex *));
+    Adjacency_list **new_adjacency_list = (Adjacency_list **) malloc(vertex_quantity * sizeof (Adjacency_list *));
     for(lli i = 0; i < vertex_quantity; i++) {
         new_adjacency_list[i] = NULL;
     }
