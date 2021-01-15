@@ -1,21 +1,40 @@
 #include <stdio.h>
 #include "graph.h"
 #include "prim.h"
+
+Graph *get_graph();
+
 int main() {
-    Graph *graph = create_graph(6);
-    graph = add_weighted_simple_edge(graph, 0, 1, 5);
-    graph = add_weighted_simple_edge(graph, 0, 2, 6);
-    graph = add_weighted_simple_edge(graph, 0, 3, 4);
-    graph = add_weighted_simple_edge(graph, 1, 2, 1);
-    graph = add_weighted_simple_edge(graph, 1, 3, 2);
-    graph = add_weighted_simple_edge(graph, 2, 3, 2);
-    graph = add_weighted_simple_edge(graph, 2, 4, 7);
-    graph = add_weighted_simple_edge(graph, 2, 5, 3);
-    graph = add_weighted_simple_edge(graph, 3, 5, 4);
-    graph = add_weighted_simple_edge(graph, 4, 5, 4);
+    Graph *graph = get_graph();
 
     graph = prim_algorithm(graph, 0);
+
     print_MST(graph->vertex, graph->vertex_quantity);
 
     return 0;
+}
+
+Graph *get_graph() {
+
+    FILE *in = fopen("../input", "r");
+
+    // verifica se o arquivo existe
+    if (!in) {
+        printf("Erro! Nao foi possivel abrir o arquivo.\n");
+        exit(-1);
+    }
+
+    lli n;
+    fscanf(in, "%lli", &n);
+
+    Graph *graph = create_graph(n);
+
+    lli v1, v2, w;
+
+    while (fscanf(in, "%lli", &v1) != EOF) {
+        fscanf(in, "%lli %lli", &v2, &w);
+        graph = add_weighted_simple_edge(graph, v1, v2, w);
+    }
+
+    return graph;
 }
