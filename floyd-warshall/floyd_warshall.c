@@ -7,6 +7,22 @@
 #include <stdlib.h>
 #include <limits.h>
 
+lli **initialize_distancies(lli **adjacency_matrix, lli size) {
+    lli **minimal_distancies = (lli **) malloc(size * sizeof (lli *));
+    for (lli i = 0; i < size; i++) {
+        minimal_distancies[i] = (lli *) malloc(size * (sizeof (lli)));
+        for (lli j = 0; j < size; j++) {
+            minimal_distancies[i][j] = adjacency_matrix[i][j];
+        }
+    }
+
+    return minimal_distancies;
+};
+
+lli min(lli a, lli b) {
+    return a < b ? a : b;
+}
+
 void floyd_warshall_algorithm (Graph *graph) {
     lli **minimal_distancies;
 
@@ -24,22 +40,6 @@ void floyd_warshall_algorithm (Graph *graph) {
     printMatrix(minimal_distancies, graph->vertex_quantity);
 
 }
-
-lli min(lli a, lli b) {
-    return a < b ? a : b;
-}
-
-lli **initialize_distancies(lli **adjacency_matrix, lli size) {
-    lli **minimal_distancies = (lli **) malloc(size * sizeof (lli *));
-    for (lli i = 0; i < size; i++) {
-        minimal_distancies[i] = (lli *) malloc(size * (sizeof (lli)));
-        for (lli j = 0; j < size; j++) {
-            minimal_distancies[i][j] = adjacency_matrix[i][j];
-        }
-    }
-
-    return minimal_distancies;
-};
 
 void printMatrix(lli **minimal_distancies, lli size) {
     for (lli i = 0; i < size; i++) {
